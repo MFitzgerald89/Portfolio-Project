@@ -1,0 +1,19 @@
+const sections = document.querySelectorAll('.section');
+const sectBtns = document.querySelectorAll('.controls');
+const sectBtn = document.querySelectorAll('.control');
+const allSections = document.querySelector('.maint-content');
+
+
+function PageTransition() {
+  //Button click active class
+  for (let i = 0; i < sectBtn.length; i++){
+    sectBtn[i].addEventListener('click', () => {
+      let currentBtn = document.querySelectorAll('.active-btn');
+      currentBtn[0].classlist = currentBtn[0].className.replace('active-btn', '');
+      this.className += 'active-btn'
+    })
+  }
+}
+
+PageTransition: ;
+
