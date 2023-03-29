@@ -53,13 +53,13 @@ section {
 .section {
   transform: translateY(-100%);
   transition: all 0.4s ease-in-out;
-  background-color: var(--color-primary);
+  background-color: white;
 }
 
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(--color-grey-0);
+  background-color: black;
 }
 
 .sec2 {
@@ -88,14 +88,17 @@ section {
 
 .active {
   display: block;
-  animation: scaleAnim 1.5s ease-in-out;
+  animation: scaleAnim 1s ease-out;
 }
 @keyframes scaleAnim {
   0% {
-    transform: translateY(102px -111px) scale(0);
+    transform: translateY(0) scaleY(0);
   }
-  10% {
-    transform: translate(100%) scale(0);
+  50% {
+    transform: translateY(-1) scaleY(-1);
+  }
+  100% {
+    transform: translateY(1) scaleY(1);
   }
 }
 
