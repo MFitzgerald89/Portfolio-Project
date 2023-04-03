@@ -121,7 +121,7 @@ section {
   .control {
     padding: 1rem;
     cursor: pointer;
-    background-color: var(--color-grey-0);
+    background-color: goldenrod;
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -139,22 +139,24 @@ section {
   }
 
   .active-btn {
-    background-image: linear-gradient(black, white) !important;
+    // background-image: linear-gradient(black, white) !important;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/tileable_wood_texture.png");
     transition: all 0.4s ease;
+    color: var(--color-grey-3);
     }
   }
 
     i {
-      color: var(--color-white) !important;
+      color: var(--color-black) !important;
       color: var(--color-grey-2);
       pointer-events: none;
     }
-  }
+  
   .main-btn{
     color: white;
     display: block;
   }
-}
+
 
 //Header Content 
 
@@ -183,38 +185,59 @@ clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
   }
 }
 
-.typewriter-wrapper {
-  display: flex;
-  justify-content: center;
-}
+// .typewriter-wrapper {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.typewriter-text {
-  position: relative;
-  margin: center;
-  white-space: nowrap;
-  overflow: hidden;
-  width:min-content;
-  border-right: 1px solid white;
-}
+// .typewriter-text {
+//   position: relative;
+//   margin: center;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   width:min-content;
+//   border-right: 1px solid white;
+// }
 
-.line-1 {
-  animation: type 3.5s .5s steps(27, end) forwards,
-  blink 1s step-end infinite;
-}
-
-
-@keyframes type {
-  from {max-width: 0}
-  to {max-width: 100%}
-  }
+// .line-1 {
+//   animation: type 3.5s .5s steps(27, end) forwards,
+//   blink 1s step-end infinite;
+// }
 
 
-@keyframes blink {
-  0%,
-  100% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: goldenrod;
-  }
-  }
+// @keyframes type {
+//   from {max-width: 0}
+//   to {max-width: 100%}
+//   }
+
+
+// @keyframes blink {
+//   0%,
+//   100% {
+//     border-color: transparent;
+//   }
+//   50% {
+//     border-color: goldenrod;
+//   }
+//   }
+
+.typewriter-text{
+        overflow: hidden;
+        border-right: .1em solid;
+        border-radius: 3px;
+        white-space: nowrap;
+        animation: typing 3.5s steps(35, end) forwards,
+        blinking 1s infinite;
+        animation-delay: .05s;
+        font-size: 1.6rem;
+        width: min-content;
+    }
+    @keyframes typing {
+      from { max-width: 0 }
+      to { max-width: 100% }
+    }
+    @keyframes blinking {
+      from { border-color: transparent }
+      to { border-color: burlywood; }
+    }
+    
