@@ -37,7 +37,7 @@ a {
 
 header {
   height: 100vh;
-  color: var(--color-white);
+  color: linear-gradient(teal black);
   overflow: hidden;
 }
 
@@ -60,11 +60,17 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  color: white;
+  background-image: url();
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+}
+.sec2 .intro {
+  border-radius: 300px;
+  opacity: 50%;
 }
 
 .sec3 {
@@ -158,13 +164,16 @@ i {
   transition: all 0.4s ease-in-out;
   width: 65%;
   height: 100%;
-  background-image: radial-gradient(teal, var(--color-primary));
+  background-image: url("https://media.vrbo.com/lodging/36000000/35680000/35672900/35672840/24109b03.f10.jpg");
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
   -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
+}
+.header-content .left-header .image {
+  border-radius: var(--br-sm-2);
 }
 
 .typewriter-text {
@@ -177,8 +186,10 @@ i {
   font-size: 1.6rem;
   width: -moz-min-content;
   width: min-content;
+  text-shadow: 0 0 0.05em rgba(247, 244, 244, 0.2), -0.025em 0.025em 0.1em burlywood, -0.05em 0.05em 0.1em #090909, -0.1em 0.1em 0.3em #0c0b0b, -0.1em 0.1em 0.5em rgba(12, 12, 12, 0.5);
+  translate: translate3d(0, 0, 0);
+  border-radius: 30px;
 }
-
 @keyframes typing {
   from {
     max-width: 0;
