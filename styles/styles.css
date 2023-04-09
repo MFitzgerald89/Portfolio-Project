@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+  --color-secondary: #0792f6;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #f3ef08;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -212,7 +212,7 @@ section {
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
-.about-container .right-about {
+/* .about-container .right-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
@@ -267,7 +267,7 @@ section {
 .about-container .left-about h4 {
   font-size: 2rem;
   text-transform: uppercase;
-}
+} */
 
 .about-stats {
   padding-bottom: 4rem;
