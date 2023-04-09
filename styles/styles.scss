@@ -174,7 +174,7 @@ section {
           img {
               width: 100%;
               height: 100%;
-              object-fit: cover;
+              object-fit: center;
               transition: all .4s ease-in-out;
               filter: grayscale(100%);
               &:hover{
@@ -299,12 +299,12 @@ section {
                       transition: all .4s ease-in-out;
                       width: 60%;
                   }
-                  .html { width: 80%; }
-                  .css { width: 95%; }
-                  .js { width: 75%; }
-                  .react{ width: 60%; }
-                  .node{ width: 87%; }
-                  .python{ width: 70%; }
+                  .html { width: 50%; }
+                  .css { width: 50%; }
+                  .js { width: 50%; }
+                  .react{ width: 25%; }
+                  .node{ width: 25%; }
+                  .ruby{ width: 50%; }
               }
           }
       }
