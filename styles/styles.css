@@ -437,12 +437,20 @@ section {
   padding-bottom: 0;
   object-fit: cover;
   border-radius: 15px;
+  border-style: solid;
+  border-color: #fbf9f9;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.portfolios .portfolio-item img:hover {
+  border-style: solid;
+  border-color: #000;
+  box-shadow: 2em 2em black ;
 }
 
 /* .portfolios .portfolio-item {
