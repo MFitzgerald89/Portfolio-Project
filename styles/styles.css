@@ -195,10 +195,9 @@ section {
   filter: grayscale(0);
   box-shadow: 6px 6px 6px rgb(8, 8, 8);
   border-radius: 1em;
-  opacity: 85%;
   display:flex;
-  transform: rotate(1turn)scale3d(1.1, 1.1, 1.1);
-  transition: all 3s ease-in;
+  transform: rotate(10turn)scale3d(1.1, 1.1, 1.1);
+  transition: all 3s ease-in-out;
 
   
 }
