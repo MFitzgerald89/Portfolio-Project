@@ -484,7 +484,9 @@ section {
               margin-left: 1.5rem;
           }
       }
-      .submit-btn {
+      div.button.submit {
+        background-color: yellow;
+        color: white;
           display: flex;
           justify-content: flex-start;
       }

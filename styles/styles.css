@@ -548,6 +548,8 @@ section {
   width: 100%;
   color: var(--color-white);
   resize: none;
+  align-items: center;
+  justify-content: center;
 }
 .contact-content-con .right-contact .i-c-2 {
   display: flex;
@@ -905,6 +907,21 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+
+  button.submit {
+    background-color: white;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgb(56, 151, 240),
+    1px 1px 3px rgb(56, 151, 240), 0px 0px 10px rgb(56, 151, 240);
+    text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 3px black;
+    height: 50px;
+    width: 200px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
   }
 }
 
